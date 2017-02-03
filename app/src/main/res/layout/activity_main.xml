@@ -22,23 +22,20 @@
             android:layout_width="105dp"
             android:layout_height="match_parent">
 
-            <Button
+            <ToggleButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="POWER"
                 android:id="@+id/power" />
 
-            <Button
+            <ToggleButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="AM"
-                android:id="@+id/button3" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="FM"
-                android:id="@+id/button4" />
+                android:text=""
+                android:id="@+id/amfm"
+                android:onClick="amListener"
+                android:textOff="FM"
+                android:textOn="AM" />
         </LinearLayout>
 
         <LinearLayout
@@ -63,15 +60,15 @@
                     android:layout_width="495dp"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="\n\n\n\n\n\n\n hi"
                     android:id="@+id/display"
                     android:background="#FF000000"
+                    android:text="hello"
                     android:layout_gravity="center_horizontal" />
 
                 <SeekBar
                     android:layout_width="509dp"
                     android:layout_height="wrap_content"
-                    android:id="@+id/seekBar2"
+                    android:id="@+id/tuner"
                     android:layout_gravity="center_horizontal" />
 
                 <LinearLayout
